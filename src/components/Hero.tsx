@@ -77,18 +77,18 @@ export function Hero({ hero }: HeroProps) {
           {...enterProps(0.12)}
           className="flex justify-start lg:col-span-5 lg:justify-end"
         >
-          <div className="relative w-full max-w-[320px] overflow-hidden rounded-xl border border-white/12 bg-[#0c192b] shadow-2xl shadow-black/40 sm:max-w-[360px]">
+          <div className="relative w-full max-w-[320px] overflow-hidden rounded-xl border border-white/12 bg-[#0c192b] shadow-2xl shadow-black/40 sm:max-w-[380px]">
             <img
-              src="/images/portrait.webp"
+              src="/images/avatar.jpg"
               alt={hero.portraitAlt}
-              width={720}
-              height={900}
+              width={460}
+              height={460}
               fetchPriority="high"
               decoding="async"
-              className="aspect-[4/5] w-full object-cover object-top"
+              className="aspect-square w-full object-cover object-center"
             />
             <div
-              className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#07111e]/80 via-[#07111e]/25 to-transparent"
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#07111e]/60 via-[#07111e]/15 to-transparent"
               aria-hidden="true"
             />
           </div>
